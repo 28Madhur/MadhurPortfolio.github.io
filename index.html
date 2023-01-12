@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .tabs {
+            display: flex;
+            margin-left: 50%;
+            margin-top: 30px;
+
+        }
+
+        .abt,
+        .skill,
+        .port,
+        .edu,
+        .exp,
+        .cont {
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        .cv {
+            margin-top: 50px;
+            margin-left: 50px;
+
+        }
+
+        .head {
+            display: flex;
+        }
+
+        .center {
+            text-align: center;
+            font-size: larger;
+            padding: 20px;
+        }
+
+        img {
+            border: 1px solid red;
+            height: 110px;
+            width: 110px;
+            margin-left: 30px;
+            border-radius: 50%;
+        }
+
+        input[type=button] {
+            height: 40px;
+            width: 140px;
+            background-color: green;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .content {
+            margin: 30px;
+            display: flex;
+            /* border: 1px solid black; */
+            box-shadow: 5px 5px 5px 5px lightgray;
+
+        }
+
+        .a {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjs4I0mGL8W_40cNbB_OfRytgd2t5dfXUW8g&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .about,
+        .basic {
+            margin: 60px;
+            width: 50%;
+        }
+
+        .abt-hd {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .about1 {
+            margin-top: 20px;
+            font-size: large;
+        }
+
+        .table {
+            display: flex;
+        }
+
+        .col1 {
+            font-weight: bold;
+            margin-right: 30px;
+            line-height: 30px;
+        }
+
+        .col2 {
+            line-height: 30px;
+            font-size: large;
+        }
+
+        .p_head {
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            margin: 40px 30px 30px 30px;
+        }
+
+        .prof {
+            margin: 30px;
+
+        }
+
+        .prof_cont {
+            display: flex;
+            /* border: 1px solid black; */
+            box-shadow: 5px 5px 5px 5px lightgray;
+            color: green;
+            font-size: large;
+        }
+
+        .prof_cont_html {
+            width: 50%;
+            margin: 30px 20px 30px 50px;
+
+        }
+
+        #html,
+        #net {
+            width: 50%;
+            height: 20px;
+            background-color: green;
+
+
+        }
+
+        .prof_cont_css {
+            width: 50%;
+            margin: 30px 20px 30px 50px;
+        }
+
+        #css,
+        #linux {
+            width: 50%;
+            height: 20px;
+            background-color: green;
+        }
+
+        .box {
+            display: flex;
+            margin: 30px;
+            box-shadow: 5px 5px 5px 5px lightgray;
+            font-size: large;
+        }
+
+        .green {
+            /* border: 1px solid black; */
+            width: 30%;
+            text-align: center;
+            background-color: green;
+            color: white;
+            padding: 30px;
+        }
+        .ibm{
+            font-size: larger;
+            margin-top: 150px;
+        }
+
+        .white {
+            padding: 30px;
+        }
+        .link{
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            line-height: 30px;
+        }
+        .contact{
+            background-image: url(staticmap.png);
+            width: 100%;
+            height: 700px;
+        }
+        .contact-me{
+            height: 550px;
+            width: 50%;
+            border: 1px solid black;
+            background-color: white;
+            position: relative;
+            top: 100px;
+            left: 500px;            
+        }
+        h2{
+            text-align: center;
+        }
+        .contact-box{
+            display: flex;
+            margin-left: 60px;
+        }
+        .feel{
+            margin-left: 20px;
+        }
+        .form{
+            margin: 10px;
+        }
+        input[type=text], input[type=email]{
+            width: 80%;
+            height: 40px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        textarea{
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .leftside{
+            width: 60%;
+        }
+        .rightside{
+            margin-left: 50px;
+            width: 40%;
+            line-height: 50px;
+            font-size: large;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        footer{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="head">
+            <div class="cv">CREATIVE CV</div>
+            <div class="tabs">
+
+                <div class="abt"><a href="#id-about">ABOUT</a> </div>
+                <div class="skill"><a href="#id-prof">SKILLS</a> </div>
+                <div class="exp"><a href="#id-work"> EXPERIENCE</a></div>
+                <div class="edu"><a href="#id-edu">EDUCATION</a> </div>
+                <div class="port"><a href="#id-cert">CERTIFICATION</a> </div>
+                <div class="cont"><a href="#id-contact"> CONTACT</a></div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="pic"><img src="photo1.jpeg" alt="photo"></div>
+            <div> Madhur Sankhla</div>
+            <div> Fresher</div>
+            <div>
+                <a href="#id-contact"><input type="button" value="Hire Me"></a>
+                <a href="Activity_28-12-2022.html" target="_blank"><input type="button" value="Download CV"></a> 
+            </div>
+        </div>
+    </div>
+    <div id="id-about">
+        <div class="content">
+
+            <div class="about">
+                <div class="abt-hd">About</div>
+                <div class="about1">Hello! I am Madhur Sankhla. I am currently pursuing diploma in IT.</div>
+
+            </div>
+            <div class="basic">
+                <div class="abt-hd">Basic Information</div>
+                <div class="table">
+                    <div class="col1">
+                        <div>AGE:</div>
+                        <div>EMAIL:</div>
+                        <div>PHONE:</div>
+                        <div>ADDRESS:</div>
+                        <div>LANGUAGE:</div>
+                    </div>
+                    <div class="col2">
+                        <div>22</div>
+                        <div>madhur.sankhla11@gmail.com</div>
+                        <div>8949142919</div>
+                        <div>Nagori Gate, Jodhpur</div>
+                        <div>English, Hindi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id-prof">
+        <div class="prof">
+            <div class="p_head">Professional Skills</div>
+            <div class="prof_cont">
+                <div class="prof_cont_html">
+                    <label>HTML - 50%</label>
+                    <div><progress id="html" value="50" max="100"></progress></div>
+                    <label>Networking - 50% </label>
+                    <div> <progress id="net" value="50" max="100"></progress></div>
+                </div>
+                <div class="prof_cont_css">
+                    <label>CSS - 40%</label>
+                    <div><progress id="css" value="40" max="100"></progress></div>
+                    <label>Linux - 40% </label>
+                    <div><progress id="linux" value="40" max="100"></progress></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="id-work">
+        <div class="work">
+            <div class="p_head">Work Experience</div>
+            <div class="box">
+                <div class="green">
+                    <p>FRESHER</p>
+                    <div>September 2022 - Present</div>
+
+                </div>
+                <div class="white">
+                    <p> Presently in the 1st year of IT Diploma.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="id-edu">
+        <div class="work">
+            <div class="p_head">Education</div>
+            <div class="box">
+                <div class="green">
+                    <p>BACHELOR'S DEGREE</p>
+                    <div>2019-2022</div>
+
+                </div>
+                <div class="white">
+                    <p> Completed Bachelor's degree from JNVU, Jodhpur</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="green">
+                    <p>HIGH SCHOOL</p>
+                    <div>2016-2018</div>
+
+                </div>
+                <div class="white">
+                    <p> Completed 12th with Science and Mathematics from St. Austin's School, Jodhpur. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="id-cert">
+        <div class="work">
+            <div class="p_head">Certification</div>
+            <div class="box">
+                <div class="green">
+                    <div class="ibm">
+                    <p>IBM Skills Build Certificates</p>
+                </div>
+                </div>
+                <div class="white">
+                    <p> Have completed a few courses from Skills Build</p>
+                    <ul>
+                        <li><a class="link" href="1.png" target="_blank">What is open source </a></li>
+                        <li><a class="link" href="2.png" target="_blank">What is Iot technology</a></li>
+                        <li><a class="link" href="3.png" target="_blank">What does it means to be digitally literate</a></li>
+                        <li><a class="link" href="4.png" target="_blank">The internet: how searches works</a></li>
+                        <li><a class="link" href="5.png" target="_blank">Red hat enterprise Linux technical</a></li>
+                        <li><a class="link" href="6.png" target="_blank">Microsoft 365 traning</a></li>
+                        <li><a class="link" href="7.png" target="_blank">Master power point 15 essential tips</a></li>
+                        <li><a class="link" href="8.png" target="_blank">Information literacy skills</a></li>
+                        <li><a class="link" href="9.png" target="_blank">Improving your computer literacy</a></li>
+                        <li><a class="link" href="10.png" target="_blank">How to create strong password</a></li>
+                        <li><a class="link" href="11.png" target="_blank">G Suite training</a></li>
+                        <li><a class="link" href="12.png" target="_blank">Being a good digital citizen</a></li>
+                        <li><a class="link" href="13.png" target="_blank">6 Ways to find what you want on the internet</a>
+                        </li>
+                        <li><a class="link" href="14.png" target="_blank">10 tips that can make anyone a microsoft word
+                                expert</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="id-contact">
+    <div class="contact">
+            <div class="contact-me">
+                <h2>Contact Me</h2>
+            
+                <div class="contact-box">
+                <div class="leftside">
+                    <div class="feel"> <h3>Feel free to contact me</h3></div>
+                <div class="form">
+                    <form action="">
+                   <div><input type="text" placeholder="   Name"></div>
+                   <div><input type="text" placeholder="  Subject"></div>
+                   <div><input type="email" name="" id="" placeholder="   Email"></div>
+                   <div><textarea name="" id="" cols="50" rows="8" placeholder="
+                    Your message"></textarea> </div>
+                   <div><input type="button" value="Send"> </div>
+                </form>
+            </div>
+            </div>
+
+            <div class="rightside">
+                <div class="bold">Address</div>
+                <div>Nagori Gate, Jodhpur</div>
+                <div class="bold">Phone</div>
+                <div>8949142919</div>
+                <div class="bold">Email</div>
+                <div>madhur.sankhla11@gmail.com</div>
+            </div>
+        </div>
+    </div>
+           
+
+    </div>
+</div>
+<footer>
+    <h1>Madhur Sankhla</h1>
+    <p>@Creative CV All Rights Reserved</p>
+</footer>
+</body>
+
+</html>
